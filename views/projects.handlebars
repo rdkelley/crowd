@@ -1,0 +1,13 @@
+<h1>Projects</h1>
+
+{{#each projects as |project|}}
+  <div class="row my-5">
+    <div class="col-6">
+      <h2>{{project.name}}</h2>
+      <h3><span class="money">${{project.needed_funding}}</span> needed!</h3>
+    </div>
+    <div class="col-6">
+      <p>{{project.description}}</p>
+    </div>
+  </div>
+{{/each}}
