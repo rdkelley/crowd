@@ -1,0 +1,24 @@
+<form id='login-form'>
+  <div class='mb-3'>
+    <label for='exampleInputEmail1' class='form-label'>Email address</label>
+    <input
+      type='email'
+      class='form-control'
+      id='loginForm-email'
+      aria-describedby='emailHelp'
+    />
+  </div>
+  <div class='mb-3'>
+    <label for='exampleInputPassword1' class='form-label'>Password</label>
+    <input type='password' class='form-control' id='loginForm-password' />
+  </div>
+  <div id='alert-container' class="invisible">
+    <div class='alert alert-danger' role='alert'>
+      Login failed: Incorrect username or password.
+    </div>
+  </div>
+  <button type='submit' class='btn btn-primary'>Submit</button>
+
+</form>
+
+<script src='./js/login.js'></script>
